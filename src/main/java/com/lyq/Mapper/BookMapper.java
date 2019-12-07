@@ -1,0 +1,16 @@
+package com.lyq.Mapper;
+
+import com.lyq.model.Book;
+import org.apache.ibatis.annotations.Mapper;
+
+import java.util.List;
+
+@Mapper
+public interface  BookMapper{
+    int addBook(Book book);
+    int deleteBookById(Integer Id);
+    int updateBookById(Book book);
+    Book getBookById(Integer Id);
+    List<Book> getAllBooks();
+
+}
